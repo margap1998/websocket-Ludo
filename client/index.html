@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title></title>
+        <meta charset="UTF-8"/>
+        <script  type="module" src="/client/src.js"></script>
+    </head>
+    <body>
+        <div style="display: flex; flex-direction: column">
+            <span>
+                <label for="game">Nazwa gry</label><input type="text" id="game"/>
+                <label for="players" >Graczy</label><input value="2" type="number" id="players"/>
+                <button id="players_btn">Nowa gra</button>
+            </span>
+            <span>
+                <label for="invitation">Kod zaproszenia</label><textarea cols="150" rows="2" id="invitation"></textarea>
+                <button id="invitation_btn">Istniejąca gra</button>
+            </span>
+            <br/>
+            <span><label for="dice">Kostka</label><input id="dice" readonly/><button id="roll_btn">Kulaj</button><input type=text readonly id="rolled"/><input type=text readonly id="who"/></span>
+            <span>
+                <canvas id="canvas_game" width="800" height="800">
+                </canvas>
+            </span>
+        </div>
+    </body>
+</html>
